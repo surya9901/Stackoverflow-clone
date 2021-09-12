@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -17,7 +18,7 @@ function Navbar() {
         <>
             <header class="navbar" style={{ "border-top": "4px solid orange" }}>
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.js" style={{ "color": "black", "fontWeight": "bold" }} ><i class="fab fa-stack-overflow" style={{ "color": "orange" }}></i> Stack Overflow - Clone</a>
+                    <Link to="/" style={{ "color": "black", "fontWeight": "bold", "textDecoration": "none", "fontSize": "20px" }} ><i class="fab fa-stack-overflow" style={{ "color": "orange" }}></i> Stack Overflow - Clone</Link>
                     <div class="d-flex">
                         <input class="me-2" type="search" placeholder="Search" aria-label="Search" />
                         <button class="btn btn-outline-success me-2" onClick={() => handlesubmit()} >Search</button>

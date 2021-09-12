@@ -1,6 +1,5 @@
 import './App.css';
 import Navbar from './Navbar';
-
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -11,10 +10,7 @@ import {
 import Content from './Content';
 import Sidebar from './sidebar';
 import Question from './Question';
-
 function App() {
-
-
 
   return (
     <>
