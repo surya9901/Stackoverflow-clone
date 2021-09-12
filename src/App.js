@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Content from './Content';
 import Sidebar from './sidebar';
+import Question from './Question';
 
 function App() {
 
@@ -27,8 +28,11 @@ function App() {
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="content-wrapper" style={{ "border-left": "2px solid grey", "border-right": "2px solid grey" }}>
-                <Content />
+              <div class="content-wrapper">
+                <Switch>
+                  <Route path="/" component={Content} exact="true" />
+                  <Route path="/Questions" component={Question} exact="true" />
+                </Switch>
               </div>
             </div>
             <div class="col-lg-4">
@@ -38,6 +42,7 @@ function App() {
             </div>
           </div>
         </div>
+
       </Router>
     </>
   );

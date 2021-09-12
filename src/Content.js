@@ -3,7 +3,7 @@ import React from 'react'
 function Content() {
     return (
         <>
-            <div class="row">
+            <div class="row" style={{ "border-left": "2px solid grey", "border-right": "2px solid grey" }}>
                 <div class="col-lg-2">
                     <div class="stats mr-2 text-center">
                         <b class="text-muted">91</b>
